@@ -96,28 +96,28 @@ public class MSButton
     {
         clicked = true;
         //your code here
-        if(isValid(myRow,myCol-1) && buttons[myRow][myCol-1].isFlagged() == true){
+        if(isValid(myRow,myCol-1) && !buttons[myRow][myCol-1].clicked && !mines.contains(buttons[myRow][myCol-1])){
           buttons[myRow][myCol-1].mousePressed();
       }
-      if(isValid(myRow-1,myCol-1) && buttons[myRow-1][myCol-1].isFlagged() == true){
+      if(isValid(myRow-1,myCol-1) && !buttons[myRow-1][myCol-1].clicked && !mines.contains(buttons[myRow-1][myCol-1])){
           buttons[myRow-1][myCol-1].mousePressed();
       }
-      if(isValid(myRow-1,myCol) && buttons[myRow-1][myCol].isFlagged() == true){
+      if(isValid(myRow-1,myCol) && !buttons[myRow-1][myCol].clicked && !mines.contains(buttons[myRow-1][myCol])){
           buttons[myRow-1][myCol].mousePressed();
       }
-      if(isValid(myRow-1,myCol+1) && buttons[myRow-1][myCol+1].isFlagged() == true){
+      if(isValid(myRow-1,myCol+1) && !buttons[myRow-1][myCol+1].clicked && !mines.contains(buttons[myRow-1][myCol+1])){
           buttons[myRow-1][myCol+1].mousePressed();
       }
-      if(isValid(myRow,myCol+1) && buttons[myRow][myCol+1].isFlagged() == true){
+      if(isValid(myRow,myCol+1) && !buttons[myRow][myCol+1].clicked && !mines.contains(buttons[myRow][myCol+1])){
           buttons[myRow][myCol+1].mousePressed();
       }
-      if(isValid(myRow+1,myCol+1) && buttons[myRow+1][myCol+1].isFlagged() == true){
+      if(isValid(myRow+1,myCol+1) && !buttons[myRow+1][myCol+1].clicked && !mines.contains(buttons[myRow+1][myCol+1])){
           buttons[myRow+1][myCol+1].mousePressed();
       }
-      if(isValid(myRow+1,myCol) && buttons[myRow+1][myCol].isFlagged() == true){
+      if(isValid(myRow+1,myCol) && !buttons[myRow+1][myCol].clicked && !mines.contains(buttons[myRow+1][myCol])){
           buttons[myRow+1][myCol].mousePressed();
       }
-      if(isValid(myRow+1,myCol-1) && buttons[myRow+1][myCol-1].isFlagged() == true){
+      if(isValid(myRow+1,myCol-1) && !buttons[myRow+1][myCol-1].clicked && !mines.contains(buttons[myRow+1][myCol-1])){
           buttons[myRow+1][myCol-1].mousePressed();
       }
     }
