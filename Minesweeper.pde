@@ -131,7 +131,7 @@ public void mousePressed()
       for(int r = myRow-1; r <= myRow+1; r++)
        for(int c = myCol-1; c <= myCol+1; c++)
           if(isValid(r, c))
-            if(!(mines.contains(buttons[r][c])) && buttons[r][c].clicked == false)
+            if(!buttons[r][c].clicked && !mines.contains(buttons[r][c]))
               buttons[r][c].mousePressed(); 
             }
   
