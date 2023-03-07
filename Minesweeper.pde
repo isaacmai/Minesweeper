@@ -167,4 +167,3 @@ public boolean isFlagged()
     return flagged;
 }
 }
-
