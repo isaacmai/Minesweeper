@@ -1,3 +1,4 @@
+import de.bezier.guido.*;
 public final static int NUM_ROWS = 20;
 public final static int NUM_COLS = 20;
 private MSButton[][] buttons; 
@@ -23,7 +24,6 @@ public void setMines()
     int c = (int)(Math.random()*20);
     if (!mines.contains(buttons[r][c]) ) {
       mines.add(buttons[r][c]);
-      System.out.println(r + " " + c);
     }
   }
 }
