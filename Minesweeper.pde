@@ -61,7 +61,7 @@ public void displayLosingMessage()
       for(int c = 0; c < NUM_COLS; c++)
         if(mines.contains(buttons[r][c]) && buttons[r][c].clicked == false)
           buttons[r][c].mousePressed();
-    noLoop();
+    //noLoop();
 }
 
 public void displayWinningMessage()
